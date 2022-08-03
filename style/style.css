@@ -1,0 +1,575 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #090909;
+  font-family: "Roboto", sans-serif;
+  padding: 1rem;
+}
+
+section#dashboard {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+}
+section#dashboard nav#main-nav {
+  width: 25rem;
+  height: 100%;
+  background: #18181d;
+  padding-left: 4rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  overflow-y: auto;
+}
+section#dashboard nav#main-nav::-webkit-scrollbar {
+  width: 0.3rem;
+}
+section#dashboard nav#main-nav::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3019607843);
+}
+section#dashboard nav#main-nav::-webkit-scrollbar-thumb {
+  background-color: #93939e;
+  outline: 1px solid slategrey;
+}
+section#dashboard nav#main-nav #pulse {
+  padding: 2rem 0;
+}
+section#dashboard nav#main-nav #pulse h1 {
+  display: flex;
+  gap: 2rem;
+  font-size: 2rem;
+}
+section#dashboard nav#main-nav #pulse h1 span {
+  color: #ffffff;
+}
+section#dashboard nav#main-nav .nav-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+section#dashboard nav#main-nav .nav-section h2 {
+  color: #93939e;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+section#dashboard nav#main-nav .nav-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+section#dashboard nav#main-nav .nav-section ul .active {
+  color: #5773ff;
+}
+section#dashboard nav#main-nav .nav-section ul li {
+  list-style: none;
+  color: #ffffff;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}
+section#dashboard main#body {
+  width: calc(100% - 25rem);
+  height: 100%;
+  position: relative;
+  overflow-y: auto;
+  background-image: linear-gradient(to bottom, #060606, #181818);
+}
+section#dashboard main#body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+section#dashboard main#body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3019607843);
+}
+section#dashboard main#body::-webkit-scrollbar-thumb {
+  background-color: #93939e;
+  outline: 1px solid slategrey;
+}
+section#dashboard main#body #top-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+section#dashboard main#body #top-bar .topics ul {
+  display: flex;
+  gap: 2rem;
+}
+section#dashboard main#body #top-bar .topics ul .active {
+  color: #5773ff;
+}
+section#dashboard main#body #top-bar .topics ul li {
+  list-style: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+}
+section#dashboard main#body #top-bar .search-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #1d1d1d;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+section#dashboard main#body #top-bar .search-bar #icon {
+  color: #93939e;
+}
+section#dashboard main#body #top-bar .search-bar input {
+  color: #93939e;
+  border: 0;
+  background: transparent;
+  outline: none;
+}
+section#dashboard main#body #top-bar .user-area {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+section#dashboard main#body #top-bar .user-area .icon {
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+section#dashboard main#body #top-bar .user-area #user {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: #25252d;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+section#dashboard main#body #top-bar .user-area #user #img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+section#dashboard main#body #top-bar .user-area #user #img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 0.5rem;
+}
+section#dashboard main#body #top-bar .user-area #user #name {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+section#dashboard main#body #banner {
+  width: 100%;
+  height: 40rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+section#dashboard main#body #banner #info {
+  height: 100%;
+  padding-top: 10rem;
+  padding-left: 4rem;
+}
+section#dashboard main#body #banner #info h3 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+section#dashboard main#body #banner #info #song-name {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-size: 6rem;
+  font-weight: 700;
+}
+section#dashboard main#body #banner #info #general-info {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+section#dashboard main#body #banner #info #general-info #singer {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+section#dashboard main#body #banner #info #general-info #play-count {
+  font-size: 2rem;
+  color: #93939e;
+}
+section#dashboard main#body #banner #info #buttons {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+section#dashboard main#body #banner #info #buttons #listen {
+  padding: 1.3rem;
+  background: #5773ff;
+  border-radius: 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 15rem;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border: 0.2rem solid #5773ff;
+  transition: 0.2s;
+}
+section#dashboard main#body #banner #info #buttons #listen:hover {
+  background: transparent;
+}
+section#dashboard main#body #banner #info #buttons #like {
+  color: #5773ff;
+  font-size: 2rem;
+  border: 0.3rem solid #fff;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;
+  transition: 0.2s;
+}
+section#dashboard main#body #banner #info #buttons #like:hover {
+  color: #ff57e6;
+}
+section#dashboard main#body #banner #img {
+  height: 100%;
+}
+section#dashboard main#body #banner #img img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+section#dashboard main#body #navgation-area {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 40rem;
+  gap: 2rem;
+  position: absolute;
+  left: 0;
+  top: 40rem;
+  padding: 2rem;
+}
+section#dashboard main#body #navgation-area #left {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+section#dashboard main#body #navgation-area #left #top-artists,
+section#dashboard main#body #navgation-area #left #top-genres,
+section#dashboard main#body #navgation-area #left #top-charts {
+  background: #202026;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+section#dashboard main#body #navgation-area #left #top-artists #header,
+section#dashboard main#body #navgation-area #left #top-genres #header,
+section#dashboard main#body #navgation-area #left #top-charts #header {
+  display: flex;
+  justify-content: space-between;
+}
+section#dashboard main#body #navgation-area #left #top-artists #header p,
+section#dashboard main#body #navgation-area #left #top-genres #header p,
+section#dashboard main#body #navgation-area #left #top-charts #header p {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+section#dashboard main#body #navgation-area #left #top-artists #header button,
+section#dashboard main#body #navgation-area #left #top-genres #header button,
+section#dashboard main#body #navgation-area #left #top-charts #header button {
+  color: #93939e;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+section#dashboard main#body #navgation-area #left #top-artists #artists {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+}
+section#dashboard main#body #navgation-area #left #top-artists #artists .artist {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+section#dashboard main#body #navgation-area #left #top-artists #artists .artist #img {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+section#dashboard main#body #navgation-area #left #top-artists #artists .artist #img:hover img {
+  transform: scale(1.2);
+}
+section#dashboard main#body #navgation-area #left #top-artists #artists .artist #img img {
+  transition: 0.2s;
+  width: 100%;
+  height: 100%;
+  max-width: 10rem;
+  max-height: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+section#dashboard main#body #navgation-area #left #top-artists #artists .artist #info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+}
+section#dashboard main#body #navgation-area #left #top-artists #artists .artist #info h4 {
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+section#dashboard main#body #navgation-area #left #top-artists #artists .artist #info p {
+  font-size: 1.3rem;
+  color: #93939e;
+  font-weight: 500;
+}
+section#dashboard main#body #navgation-area #left #foo {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 2rem;
+}
+section#dashboard main#body #navgation-area #left #foo #top-genres #genres-holder ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+section#dashboard main#body #navgation-area #left #foo #top-genres #genres-holder ul li {
+  list-style: none;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  min-width: 40%;
+  text-align: center;
+  border: 0.2rem solid transparent;
+  color: #000;
+  transition: 0.2s;
+}
+section#dashboard main#body #navgation-area #left #foo #top-genres #genres-holder ul li:hover {
+  color: #fff;
+  background: transparent;
+}
+section#dashboard main#body #navgation-area #left #foo #top-genres #genres-holder ul li:nth-of-type(3n + 1) {
+  background: #57ebff;
+}
+section#dashboard main#body #navgation-area #left #foo #top-genres #genres-holder ul li:nth-of-type(3n + 1):hover {
+  background: transparent;
+  border: 0.2rem solid #57ebff;
+}
+section#dashboard main#body #navgation-area #left #foo #top-genres #genres-holder ul li:nth-of-type(3n + 2) {
+  background: #57ff6d;
+}
+section#dashboard main#body #navgation-area #left #foo #top-genres #genres-holder ul li:nth-of-type(3n + 2):hover {
+  background: transparent;
+  border: 0.2rem solid #57ff6d;
+}
+section#dashboard main#body #navgation-area #left #foo #top-genres #genres-holder ul li:nth-of-type(3n + 3) {
+  background: #ff57e6;
+}
+section#dashboard main#body #navgation-area #left #foo #top-genres #genres-holder ul li:nth-of-type(3n + 3):hover {
+  background: transparent;
+  border: 0.2rem solid #ff57e6;
+}
+section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul li #thumbnail {
+  width: 4rem;
+  height: 4rem;
+}
+section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul li #thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul li #song-info {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  gap: 0.5rem;
+  width: 15rem;
+}
+section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul li #song-info #song {
+  color: #fff;
+  font-weight: 700;
+}
+section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul li #song-info #singer {
+  color: #93939e;
+  font-size: 1.1rem;
+}
+section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul li #play {
+  border: 0.1rem solid #5773ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  transition: 0.2s;
+}
+section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul li #play:hover {
+  background: #5773ff;
+}
+section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul li #add {
+  font-size: 1.4rem;
+}
+section#dashboard main#body #navgation-area #right #player {
+  padding: 2rem;
+  background: #202026;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+}
+section#dashboard main#body #navgation-area #right #player #header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+section#dashboard main#body #navgation-area #right #player #header span {
+  color: #fff;
+  font-size: 2rem;
+}
+section#dashboard main#body #navgation-area #right #player #header #icon {
+  font-size: 1.2rem;
+}
+section#dashboard main#body #navgation-area #right #player #song-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+section#dashboard main#body #navgation-area #right #player #song-info #img {
+  width: 20rem;
+  height: 12rem;
+}
+section#dashboard main#body #navgation-area #right #player #song-info #img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+section#dashboard main#body #navgation-area #right #player #song-info #info {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+section#dashboard main#body #navgation-area #right #player #song-info #info #song {
+  font-size: 2.2rem;
+}
+section#dashboard main#body #navgation-area #right #player #song-info #info #artist {
+  font-size: 1.2rem;
+}
+section#dashboard main#body #navgation-area #right #player #timer {
+  display: flex;
+  gap: 2rem;
+  width: 80%;
+}
+section#dashboard main#body #navgation-area #right #player #timer .time {
+  color: #fff;
+}
+section#dashboard main#body #navgation-area #right #player #timer #timeline {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+section#dashboard main#body #navgation-area #right #player #timer #timeline #left-bar {
+  width: 60%;
+  height: 0.5rem;
+  background: #fff;
+}
+section#dashboard main#body #navgation-area #right #player #timer #timeline #right-bar {
+  width: 40%;
+  height: 0.3rem;
+  background: #93939e;
+}
+section#dashboard main#body #navgation-area #right #player #controls {
+  width: 80%;
+}
+section#dashboard main#body #navgation-area #right #player #controls ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+section#dashboard main#body #navgation-area #right #player #controls ul li {
+  list-style: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+section#dashboard main#body #navgation-area #right #player #controls ul #play-btn {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  background: #5773ff;
+  border-radius: 1rem;
+}/*# sourceMappingURL=style.css.map */
