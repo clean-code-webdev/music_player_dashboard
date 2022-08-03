@@ -22,7 +22,7 @@
   letter-spacing: 0.1rem;
   font-size: 1.3rem;
   font-weight: 400;
-  color: #93939e;
+  color: #fff;
   cursor: pointer;
 }
 #top-bar .search-bar {
@@ -48,7 +48,7 @@
   align-items: center;
 }
 #top-bar .user-area .icon {
-  color: #93939e;
+  color: #fff;
   font-size: 1.3rem;
   cursor: pointer;
 }

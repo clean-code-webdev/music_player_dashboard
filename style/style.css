@@ -127,7 +127,7 @@ section#dashboard main#body #top-bar .topics ul li {
   letter-spacing: 0.1rem;
   font-size: 1.3rem;
   font-weight: 400;
-  color: #93939e;
+  color: #fff;
   cursor: pointer;
 }
 section#dashboard main#body #top-bar .search-bar {
@@ -153,7 +153,7 @@ section#dashboard main#body #top-bar .user-area {
   align-items: center;
 }
 section#dashboard main#body #top-bar .user-area .icon {
-  color: #93939e;
+  color: #fff;
   font-size: 1.3rem;
   cursor: pointer;
 }
@@ -242,26 +242,35 @@ section#dashboard main#body #navgation-area {
   padding: 2rem;
 }
 section#dashboard main#body #navgation-area #left {
-  height: 70rem;
-  background: rgb(9, 28, 34);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
-section#dashboard main#body #navgation-area #left #top-artists {
+section#dashboard main#body #navgation-area #left #top-artists,
+section#dashboard main#body #navgation-area #left #top-genres,
+section#dashboard main#body #navgation-area #left #top-charts {
   background: #202026;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-section#dashboard main#body #navgation-area #left #top-artists #header {
+section#dashboard main#body #navgation-area #left #top-artists #header,
+section#dashboard main#body #navgation-area #left #top-genres #header,
+section#dashboard main#body #navgation-area #left #top-charts #header {
   display: flex;
   justify-content: space-between;
 }
-section#dashboard main#body #navgation-area #left #top-artists #header p {
+section#dashboard main#body #navgation-area #left #top-artists #header p,
+section#dashboard main#body #navgation-area #left #top-genres #header p,
+section#dashboard main#body #navgation-area #left #top-charts #header p {
   color: #fff;
   font-size: 1.8rem;
   font-weight: 700;
 }
-section#dashboard main#body #navgation-area #left #top-artists #header button {
+section#dashboard main#body #navgation-area #left #top-artists #header button,
+section#dashboard main#body #navgation-area #left #top-genres #header button,
+section#dashboard main#body #navgation-area #left #top-charts #header button {
   color: #93939e;
   background: transparent;
   outline: none;
@@ -311,6 +320,64 @@ section#dashboard main#body #navgation-area #left #top-artists #artists .artist 
   font-size: 1.3rem;
   color: #93939e;
   font-weight: 500;
+}
+section#dashboard main#body #navgation-area #left #foo {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 2rem;
+}
+section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul li #thumbnail {
+  width: 4rem;
+  height: 4rem;
+}
+section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul li #thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul li #song-info {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  gap: 0.5rem;
+  width: 15rem;
+}
+section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul li #song-info #song {
+  color: #fff;
+  font-weight: 700;
+}
+section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul li #song-info #singer {
+  color: #93939e;
+  font-size: 1.1rem;
+}
+section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul li #play {
+  border: 0.1rem solid #5773ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+}
+section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul li #add {
+  font-size: 1.4rem;
 }
 section#dashboard main#body #navgation-area #right {
   height: 70rem;
