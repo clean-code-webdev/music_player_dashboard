@@ -40,6 +40,39 @@
         color: #93939e;
       }
     }
+
+    #buttons {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      margin-top: 4rem;
+
+      #listen {
+        padding: 1.5rem;
+        background: #5773ff;
+        border-radius: 3rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        width: 15rem;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      #like {
+        color: #5773ff;
+        font-size: 2rem;
+        border: 0.3rem solid #fff;
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background: transparent;
+      }
+    }
   }
 
   #img {
