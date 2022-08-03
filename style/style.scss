@@ -108,7 +108,7 @@ section#dashboard {
       justify-content: space-around;
       align-items: center;
 
-      .foo {
+      .topics {
         ul {
           display: flex;
           gap: 2rem;
@@ -129,7 +129,7 @@ section#dashboard {
         }
       }
 
-      .bar {
+      .search-bar {
         display: flex;
         align-items: center;
         gap: 1rem;
@@ -148,7 +148,7 @@ section#dashboard {
         }
       }
 
-      .ace {
+      .user-area {
         display: flex;
         gap: 2rem;
         align-items: center;
