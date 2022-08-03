@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #090909;
+  font-family: "Roboto", sans-serif;
+  padding: 1rem;
+}
+
+section#dashboard {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+section#dashboard nav#main-nav {
+  width: 25rem;
+  height: 100%;
+  background: #18181d;
+  padding-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  overflow-y: auto;
+}
+section#dashboard nav#main-nav::-webkit-scrollbar {
+  width: 0.3rem;
+}
+section#dashboard nav#main-nav::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3019607843);
+}
+section#dashboard nav#main-nav::-webkit-scrollbar-thumb {
+  background-color: #93939e;
+  outline: 1px solid slategrey;
+}
+section#dashboard nav#main-nav #pulse {
+  padding: 2rem 0;
+}
+section#dashboard nav#main-nav #pulse h1 {
+  display: flex;
+  gap: 2rem;
+  font-size: 2rem;
+}
+section#dashboard nav#main-nav #pulse h1 span {
+  color: #ffffff;
+}
+section#dashboard nav#main-nav .nav-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+section#dashboard nav#main-nav .nav-section h2 {
+  color: #93939e;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+section#dashboard nav#main-nav .nav-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+section#dashboard nav#main-nav .nav-section ul .active {
+  color: #5773ff;
+}
+section#dashboard nav#main-nav .nav-section ul li {
+  list-style: none;
+  color: #ffffff;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}/*# sourceMappingURL=style.css.map */
