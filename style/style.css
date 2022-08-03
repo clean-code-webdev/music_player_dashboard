@@ -227,7 +227,7 @@ section#dashboard main#body #banner #info #buttons {
   margin-top: 4rem;
 }
 section#dashboard main#body #banner #info #buttons #listen {
-  padding: 1.5rem;
+  padding: 1.3rem;
   background: #5773ff;
   border-radius: 3rem;
   font-size: 1.5rem;
@@ -236,6 +236,11 @@ section#dashboard main#body #banner #info #buttons #listen {
   color: #fff;
   text-align: center;
   cursor: pointer;
+  border: 0.2rem solid #5773ff;
+  transition: 0.2s;
+}
+section#dashboard main#body #banner #info #buttons #listen:hover {
+  background: transparent;
 }
 section#dashboard main#body #banner #info #buttons #like {
   color: #5773ff;

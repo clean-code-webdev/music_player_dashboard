@@ -48,7 +48,7 @@
       margin-top: 4rem;
 
       #listen {
-        padding: 1.5rem;
+        padding: 1.3rem;
         background: #5773ff;
         border-radius: 3rem;
         font-size: 1.5rem;
@@ -57,6 +57,13 @@
         color: #fff;
         text-align: center;
         cursor: pointer;
+        border: 0.2rem solid #5773ff;
+        transition: 0.2s;
+
+        &:hover {
+          // border: .2rem solid #5773ff;
+          background: transparent;
+        }
       }
 
       #like {
