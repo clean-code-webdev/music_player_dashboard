@@ -144,7 +144,6 @@ section#dashboard {
                   font-size: 1.5rem;
                   text-transform: capitalize;
                   font-weight: 500;
-                  // text-align: center;
                 }
                 p {
                   font-size: 1.3rem;
@@ -162,7 +161,62 @@ section#dashboard {
           gap: 2rem;
 
           #top-genres {
-            //
+            #genres-holder {
+              ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 2rem;
+
+                li {
+                  list-style: none;
+                  padding: 1rem 2rem;
+                  font-size: 1.3rem;
+                  border-radius: 1rem;
+                  font-weight: 700;
+                  letter-spacing: 0.1rem;
+                  text-transform: capitalize;
+                  cursor: pointer;
+                  min-width: 40%;
+                  text-align: center;
+                  border: 0.2rem solid transparent;
+                  color: #000;
+                  transition: 0.2s;
+
+                  &:hover {
+                    color: #fff;
+                    background: transparent;
+                  }
+
+                  &:nth-of-type(3n + 1) {
+                    background: #57ebff;
+
+                    &:hover {
+                      background: transparent;
+                      border: 0.2rem solid #57ebff;
+                    }
+                  }
+
+                  &:nth-of-type(3n + 2) {
+                    background: #57ff6d;
+
+                    &:hover {
+                      background: transparent;
+                      border: 0.2rem solid #57ff6d;
+                    }
+                  }
+
+                  &:nth-of-type(3n + 3) {
+                    background: #ff57e6;
+
+                    &:hover {
+                      background: transparent;
+                      border: 0.2rem solid #ff57e6;
+                    }
+                  }
+                }
+              }
+            }
           }
 
           #top-charts {
@@ -219,6 +273,11 @@ section#dashboard {
                     width: 2.5rem;
                     height: 2.5rem;
                     border-radius: 0.5rem;
+                    transition: 0.2s;
+
+                    &:hover {
+                      background: #5773ff;
+                    }
                   }
 
                   #add {

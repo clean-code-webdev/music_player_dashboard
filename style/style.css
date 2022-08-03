@@ -254,6 +254,10 @@ section#dashboard main#body #banner #info #buttons #like {
   justify-content: center;
   cursor: pointer;
   background: transparent;
+  transition: 0.2s;
+}
+section#dashboard main#body #banner #info #buttons #like:hover {
+  color: #ff57e6;
 }
 section#dashboard main#body #banner #img {
   height: 100%;
@@ -367,6 +371,52 @@ section#dashboard main#body #navgation-area #left #foo {
   grid-template-columns: 2fr 3fr;
   gap: 2rem;
 }
+section#dashboard main#body #navgation-area #left #foo #top-genres #genres-holder ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+section#dashboard main#body #navgation-area #left #foo #top-genres #genres-holder ul li {
+  list-style: none;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  min-width: 40%;
+  text-align: center;
+  border: 0.2rem solid transparent;
+  color: #000;
+  transition: 0.2s;
+}
+section#dashboard main#body #navgation-area #left #foo #top-genres #genres-holder ul li:hover {
+  color: #fff;
+  background: transparent;
+}
+section#dashboard main#body #navgation-area #left #foo #top-genres #genres-holder ul li:nth-of-type(3n + 1) {
+  background: #57ebff;
+}
+section#dashboard main#body #navgation-area #left #foo #top-genres #genres-holder ul li:nth-of-type(3n + 1):hover {
+  background: transparent;
+  border: 0.2rem solid #57ebff;
+}
+section#dashboard main#body #navgation-area #left #foo #top-genres #genres-holder ul li:nth-of-type(3n + 2) {
+  background: #57ff6d;
+}
+section#dashboard main#body #navgation-area #left #foo #top-genres #genres-holder ul li:nth-of-type(3n + 2):hover {
+  background: transparent;
+  border: 0.2rem solid #57ff6d;
+}
+section#dashboard main#body #navgation-area #left #foo #top-genres #genres-holder ul li:nth-of-type(3n + 3) {
+  background: #ff57e6;
+}
+section#dashboard main#body #navgation-area #left #foo #top-genres #genres-holder ul li:nth-of-type(3n + 3):hover {
+  background: transparent;
+  border: 0.2rem solid #ff57e6;
+}
 section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul {
   display: flex;
   flex-direction: column;
@@ -416,6 +466,10 @@ section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holde
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 0.5rem;
+  transition: 0.2s;
+}
+section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul li #play:hover {
+  background: #5773ff;
 }
 section#dashboard main#body #navgation-area #left #foo #top-charts #charts-holder ul li #add {
   font-size: 1.4rem;

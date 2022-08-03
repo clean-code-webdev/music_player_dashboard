@@ -70,6 +70,10 @@
   justify-content: center;
   cursor: pointer;
   background: transparent;
+  transition: 0.2s;
+}
+#banner #info #buttons #like:hover {
+  color: #ff57e6;
 }
 #banner #img {
   height: 100%;
