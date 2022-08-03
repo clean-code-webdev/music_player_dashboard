@@ -70,12 +70,10 @@ section#dashboard nav#main-nav .nav-section h2 {
 section#dashboard nav#main-nav .nav-section ul {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding-right: 0.7rem;
+  gap: 2rem;
 }
 section#dashboard nav#main-nav .nav-section ul .active {
   color: #5773ff;
-  border-right: 0.2rem solid #5773ff;
 }
 section#dashboard nav#main-nav .nav-section ul li {
   list-style: none;
@@ -87,7 +85,6 @@ section#dashboard nav#main-nav .nav-section ul li {
   font-weight: 500;
   text-transform: capitalize;
   letter-spacing: 0.1rem;
-  padding: 0.5rem 0;
 }
 section#dashboard main#body {
   width: calc(100% - 25rem);
