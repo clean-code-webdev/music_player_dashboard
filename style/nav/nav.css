@@ -44,10 +44,12 @@ nav#main-nav .nav-section h2 {
 nav#main-nav .nav-section ul {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
+  padding-right: 0.7rem;
 }
 nav#main-nav .nav-section ul .active {
   color: #5773ff;
+  border-right: 0.2rem solid #5773ff;
 }
 nav#main-nav .nav-section ul li {
   list-style: none;
@@ -59,4 +61,5 @@ nav#main-nav .nav-section ul li {
   font-weight: 500;
   text-transform: capitalize;
   letter-spacing: 0.1rem;
+  padding: 0.5rem 0;
 }/*# sourceMappingURL=nav.css.map */
