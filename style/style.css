@@ -41,10 +41,15 @@ section#dashboard .show-nav {
   left: 0;
 }
 section#dashboard .hide-nav {
-  left: -25rem;
+  left: -100%;
+}
+@media screen and (min-width: 768px) {
+  section#dashboard .hide-nav {
+    width: 25rem;
+  }
 }
 section#dashboard nav#main-nav {
-  width: 25rem;
+  width: 100%;
   height: 100%;
   background: #18181d;
   padding-left: 4rem;
@@ -56,6 +61,11 @@ section#dashboard nav#main-nav {
   position: relative;
   z-index: 9999;
   transition: 0.2s;
+}
+@media screen and (min-width: 768px) {
+  section#dashboard nav#main-nav {
+    width: 25rem;
+  }
 }
 @media screen and (min-width: 1050px) {
   section#dashboard nav#main-nav {
@@ -156,10 +166,17 @@ section#dashboard main#body #top-bar {
   align-items: center;
   position: absolute;
   top: 0;
-  left: 5%;
-  width: 90%;
+  left: 10%;
+  width: 80%;
   z-index: 1;
   background: rgba(0, 0, 0, 0.2);
+  gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  section#dashboard main#body #top-bar {
+    left: 5%;
+    width: 90%;
+  }
 }
 @media screen and (min-width: 1050px) {
   section#dashboard main#body #top-bar {
@@ -184,12 +201,17 @@ section#dashboard main#body #top-bar .topics ul li {
   cursor: pointer;
 }
 section#dashboard main#body #top-bar .search-bar {
-  display: flex;
   align-items: center;
   gap: 1rem;
   background: #1d1d1d;
   border-radius: 1rem;
   padding: 1rem;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  section#dashboard main#body #top-bar .search-bar {
+    display: flex;
+  }
 }
 section#dashboard main#body #top-bar .search-bar #icon {
   color: #93939e;
@@ -211,13 +233,18 @@ section#dashboard main#body #top-bar .user-area .icon {
   cursor: pointer;
 }
 section#dashboard main#body #top-bar .user-area #user {
-  display: flex;
+  display: none;
   gap: 1rem;
   align-items: center;
   background: #25252d;
   padding: 0.7rem;
   border-radius: 0.5rem;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  section#dashboard main#body #top-bar .user-area #user {
+    display: flex;
+  }
 }
 section#dashboard main#body #top-bar .user-area #user #img {
   width: 2.5rem;
@@ -245,20 +272,31 @@ section#dashboard main#body #banner {
 }
 section#dashboard main#body #banner #info {
   height: 100%;
-  padding-top: 10rem;
+  padding-top: 6rem;
   padding-left: 4rem;
   z-index: 999999;
+}
+@media screen and (min-width: 768px) {
+  section#dashboard main#body #banner #info {
+    padding-top: 10rem;
+  }
 }
 section#dashboard main#body #banner #info h3 {
   font-size: 2rem;
   color: #ffffff;
 }
 section#dashboard main#body #banner #info #song-name {
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-bottom: 1.5rem;
   color: #ffffff;
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  section#dashboard main#body #banner #info #song-name {
+    margin-top: 4rem;
+    font-size: 6rem;
+  }
 }
 section#dashboard main#body #banner #info #general-info {
   display: flex;
@@ -267,12 +305,22 @@ section#dashboard main#body #banner #info #general-info {
 }
 section#dashboard main#body #banner #info #general-info #singer {
   color: #ffffff;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
 }
+@media screen and (min-width: 768px) {
+  section#dashboard main#body #banner #info #general-info #singer {
+    font-size: 2.5rem;
+  }
+}
 section#dashboard main#body #banner #info #general-info #play-count {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #93939e;
+}
+@media screen and (min-width: 768px) {
+  section#dashboard main#body #banner #info #general-info #play-count {
+    font-size: 2rem;
+  }
 }
 section#dashboard main#body #banner #info #buttons {
   display: flex;
@@ -378,8 +426,13 @@ section#dashboard main#body #navgation-area #left #top-charts #header button {
 }
 section#dashboard main#body #navgation-area #left #top-artists #artists {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  section#dashboard main#body #navgation-area #left #top-artists #artists {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 section#dashboard main#body #navgation-area #left #top-artists #artists .artist {
   display: flex;
@@ -427,8 +480,13 @@ section#dashboard main#body #navgation-area #left #top-artists #artists .artist 
 }
 section#dashboard main#body #navgation-area #left #foo {
   display: grid;
-  grid-template-columns: 1fr 1.3fr;
+  grid-template-columns: 1fr;
   gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  section#dashboard main#body #navgation-area #left #foo {
+    grid-template-columns: 1fr 1.3fr;
+  }
 }
 @media screen and (min-width: 1050px) {
   section#dashboard main#body #navgation-area #left #foo {
