@@ -34,6 +34,13 @@ section#dashboard nav#main-nav {
   flex-direction: column;
   gap: 5rem;
   overflow-y: auto;
+  position: relative;
+  left: -25rem;
+}
+@media screen and (min-width: 1050px) {
+  section#dashboard nav#main-nav {
+    left: 0;
+  }
 }
 section#dashboard nav#main-nav::-webkit-scrollbar {
   width: 0.3rem;
@@ -87,11 +94,18 @@ section#dashboard nav#main-nav .nav-section ul li {
   letter-spacing: 0.1rem;
 }
 section#dashboard main#body {
-  width: calc(100% - 25rem);
+  width: 100%;
   height: 100%;
-  position: relative;
   overflow-y: auto;
   background-image: linear-gradient(to bottom, #060606, #181818);
+  position: fixed;
+  left: 0;
+}
+@media screen and (min-width: 1050px) {
+  section#dashboard main#body {
+    position: relative;
+    width: calc(100% - 25rem);
+  }
 }
 section#dashboard main#body::-webkit-scrollbar {
   width: 0.3rem;
@@ -109,10 +123,16 @@ section#dashboard main#body #top-bar {
   align-items: center;
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 5%;
+  width: 90%;
   z-index: 1;
   background: rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 1050px) {
+  section#dashboard main#body #top-bar {
+    width: 100%;
+    left: 0;
+  }
 }
 section#dashboard main#body #top-bar .topics ul {
   display: flex;
@@ -194,6 +214,7 @@ section#dashboard main#body #banner #info {
   height: 100%;
   padding-top: 10rem;
   padding-left: 4rem;
+  z-index: 999999;
 }
 section#dashboard main#body #banner #info h3 {
   font-size: 2rem;
@@ -273,12 +294,17 @@ section#dashboard main#body #banner #img img {
 section#dashboard main#body #navgation-area {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 40rem;
+  grid-template-columns: 1fr;
   gap: 2rem;
   position: absolute;
   left: 0;
   top: 40rem;
   padding: 2rem;
+}
+@media screen and (min-width: 1050px) {
+  section#dashboard main#body #navgation-area {
+    grid-template-columns: 1fr 40rem;
+  }
 }
 section#dashboard main#body #navgation-area #left {
   display: flex;
@@ -368,8 +394,13 @@ section#dashboard main#body #navgation-area #left #top-artists #artists .artist 
 }
 section#dashboard main#body #navgation-area #left #foo {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr 1.3fr;
   gap: 2rem;
+}
+@media screen and (min-width: 1050px) {
+  section#dashboard main#body #navgation-area #left #foo {
+    grid-template-columns: 2fr 3fr;
+  }
 }
 section#dashboard main#body #navgation-area #left #foo #top-genres #genres-holder ul {
   display: flex;
