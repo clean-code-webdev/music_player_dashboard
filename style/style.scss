@@ -25,8 +25,30 @@ section#dashboard {
   overflow: hidden;
   display: flex;
 
+  #nav-open {
+    font-size: 2rem;
+    color: #fff;
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+    z-index: 999;
+
+    @media screen and (min-width: 1050px) {
+      display: none;
+    }
+  }
+
   // ! ----------------------
   // @import "./nav/nav.scss";
+
+  .show-nav {
+    left: 0;
+  }
+
+  .hide-nav {
+    left: -25rem;
+  }
+
   nav#main-nav {
     width: 25rem;
     height: 100%;
@@ -37,12 +59,25 @@ section#dashboard {
     flex-direction: column;
     gap: 5rem;
     overflow-y: auto;
-
     position: relative;
-    left: -25rem;
+    z-index: 9999;
+    transition: 0.2s;
 
     @media screen and (min-width: 1050px) {
       left: 0;
+    }
+
+    #nav-close {
+      font-size: 2rem;
+      color: rgb(255, 255, 255);
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      z-index: 999;
+
+      @media screen and (min-width: 1050px) {
+        display: none;
+      }
     }
 
     &::-webkit-scrollbar {

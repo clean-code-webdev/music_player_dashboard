@@ -24,6 +24,25 @@ section#dashboard {
   overflow: hidden;
   display: flex;
 }
+section#dashboard #nav-open {
+  font-size: 2rem;
+  color: #fff;
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 999;
+}
+@media screen and (min-width: 1050px) {
+  section#dashboard #nav-open {
+    display: none;
+  }
+}
+section#dashboard .show-nav {
+  left: 0;
+}
+section#dashboard .hide-nav {
+  left: -25rem;
+}
 section#dashboard nav#main-nav {
   width: 25rem;
   height: 100%;
@@ -35,11 +54,25 @@ section#dashboard nav#main-nav {
   gap: 5rem;
   overflow-y: auto;
   position: relative;
-  left: -25rem;
+  z-index: 9999;
+  transition: 0.2s;
 }
 @media screen and (min-width: 1050px) {
   section#dashboard nav#main-nav {
     left: 0;
+  }
+}
+section#dashboard nav#main-nav #nav-close {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 999;
+}
+@media screen and (min-width: 1050px) {
+  section#dashboard nav#main-nav #nav-close {
+    display: none;
   }
 }
 section#dashboard nav#main-nav::-webkit-scrollbar {
